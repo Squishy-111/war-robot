@@ -1,13 +1,16 @@
 #include "deck.h"
 
+#include <queue>
+#include <vector>
 #include <iostream>
 #include <random>
+
 
 /* The shuffle function starts by making a temp container, then drains the std::queue 
 for cards into the temp, then randomly pushes an item from temp back to the std::queue 
 and removes that item from temp, and does that until temp is empty. */
 
-void deck::shuffle(){
+void Deck::shuffle(){
 
     // temporary container for cards
     std::vector<Card> temp {};
