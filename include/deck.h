@@ -3,7 +3,7 @@
 #include "card.h"
 #include "player.h"
 
-#include <queue>
+#include <stack>
 
 /* This class represents a 52 card deck of four suits that shuffles
 and deals to players at the start of a game. */
@@ -17,7 +17,7 @@ class Deck {
 
     private:
     
-    std::queue<Card> cards;
+    std::stack<Card> cards;
 
 
     

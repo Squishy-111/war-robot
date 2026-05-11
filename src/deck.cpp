@@ -1,6 +1,6 @@
 #include "deck.h"
+#include "player.h"
 
-#include <queue>
 #include <vector>
 #include <iostream>
 #include <random>
@@ -17,7 +17,7 @@ void Deck::shuffle(){
 
     // drain cards into temp storage for random access
     while(cards.empty() != true) {
-        temp.push_back(cards.front());
+        temp.push_back(cards.top());
         cards.pop();
     }
     
@@ -48,10 +48,10 @@ void Deck::deal(Player& player1, Player& player2){
 
     while(cards.empty() != true) {
 
-        player1.hand.push(cards.front());
+        player1.hand.push(cards.top());
         cards.pop();
         
-        player2.hand.push(cards.front());
+        player2.hand.push(cards.top());
         cards.pop();
         
     }
