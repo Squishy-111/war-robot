@@ -1,6 +1,5 @@
 #include "player.h"
 
-#include <stack>
 #include <vector>
 #include <iostream>
 #include <random>
@@ -39,5 +38,12 @@ void Player::shuffle(){
     std::cout << "discard pile is shuffled.";
 
 
+
+}
+
+
+void Player::add_to_discard(const Card& card){
+
+    discard.push(card);
 
 }
