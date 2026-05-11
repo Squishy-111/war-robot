@@ -57,3 +57,13 @@ void Player::refill_hand(){
     discard = std::stack<Card>();
 
 }
+
+bool Player::is_hand_empty(){
+
+    if(hand.empty()){
+        return true;
+    } else {
+        return false;
+    }
+
+}
