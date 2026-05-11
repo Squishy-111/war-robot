@@ -47,3 +47,13 @@ void Player::add_to_discard(const Card& card){
     discard.push(card);
 
 }
+
+void Player::refill_hand(){
+
+    //shuffles graveyard
+    shuffle();
+
+    hand = discard;
+    discard = std::stack<Card>();
+
+}
