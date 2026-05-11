@@ -36,7 +36,26 @@ void Deck::shuffle(){
 
     }
 
-    std::cout << "deck is shuffled";
+    std::cout << "deck is shuffled.";
 
+
+}
+
+/* dequeue cards from the Deck class cards queue to both players hand, 
+alternating pushing cards to each players until no cards left. */
+
+void Deck::deal(Player& player1, Player& player2){
+
+    while(cards.empty() != true) {
+
+        player1.hand.push(cards.front());
+        cards.pop();
+        
+        player2.hand.push(cards.front());
+        cards.pop();
+        
+    }
+
+    std::cout << "The cards are dealt.";
 
 }
