@@ -21,8 +21,8 @@ class Player {
 
     bool is_hand_empty();
 
-    // let flip_card be virtual to allow input handling for HumanPlayer
-    virtual Card flip_card() = 0;
+    // return card to the game_engine
+    Card flip_card();
 
     // let members be protected for cleaner access in child classes
     protected:
