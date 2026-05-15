@@ -67,3 +67,13 @@ bool Player::is_hand_empty(){
     }
 
 }
+
+Card Player::flip_card(){
+
+    //take card from top of hand
+    Card flipped_card {hand.top()};
+    hand.pop();
+
+    return flipped_card;
+
+}
