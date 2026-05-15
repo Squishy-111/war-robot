@@ -3,6 +3,7 @@
 #include "card.h"
 
 #include <stack>
+#include <iostream>
 
 /* Player class is an abstract class with two child classes human
     and cpu to allow differences like inputs handling for humans.*/
@@ -24,11 +25,11 @@ class Player {
     // return card to the game_engine
     Card flip_card();
 
-    // let members be protected for cleaner access in child classes
-    protected:
+    private:
 
     std::stack<Card> discard {};
     std::stack<Card> hand {};
+    std::string name {};
     
 
 };
