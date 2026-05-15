@@ -5,8 +5,8 @@
 #include <stack>
 #include <iostream>
 
-/* Player class is an abstract class with two child classes human
-    and cpu to allow differences like inputs handling for humans.*/
+/*  The Player class  represents a player in game, managing
+their hand and discard pile throughout gameplay.*/
 class Player {
 
     public:
