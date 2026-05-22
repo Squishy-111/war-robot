@@ -9,6 +9,8 @@
 class GameEngine {
 
     public:
+
+    void run();
         
     bool check_war();
 
@@ -27,7 +29,7 @@ class GameEngine {
 
         Card last_played_card_player1;
         Card last_played_card_player2;
-        std::stack<Card> battle_cards {};
+        std::stack<Card> battle_cards {}; 
 
 
 };

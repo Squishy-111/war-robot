@@ -1,6 +1,6 @@
 #include "game_engine.h"
 
-void game_engine::run(){
+void GameEngine::run(){
 
 // create deck instance
 // create both the human_player instance and the cpu_player instance
@@ -19,3 +19,14 @@ void game_engine::run(){
 
 
 }
+
+bool GameEngine::check_war(){
+
+    if(last_played_card_player1.rank == last_played_card_player2.rank){
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
