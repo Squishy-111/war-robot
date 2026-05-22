@@ -48,10 +48,10 @@ void Deck::deal(Player& player1, Player& player2){
 
     while(cards.empty() != true) {
 
-        player1.hand.push(cards.top());
+        player1.get_hand().push(cards.top());
         cards.pop();
         
-        player2.hand.push(cards.top());
+        player2.get_hand().push(cards.top());
         cards.pop();
         
     }
