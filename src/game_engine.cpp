@@ -39,3 +39,13 @@ std::string GameEngine::get_player_name(){
     return name;
 
 }
+
+int GameEngine::determine_battle_winner(){
+
+    if(last_played_card_player1.rank > last_played_card_player2.rank){
+        return 1;
+    } else {
+        return 2;
+    }
+
+}
