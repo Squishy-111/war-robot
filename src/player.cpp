@@ -77,3 +77,9 @@ Card Player::flip_card(){
     return flipped_card;
 
 }
+
+std::stack<Card>& Player::get_hand(){
+
+    return hand;
+
+}

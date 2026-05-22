@@ -22,6 +22,9 @@ class Player {
 
     bool is_hand_empty();
 
+    // lets deck class push cards to hand
+    std::stack<Card>& get_hand();
+
     // return card to the game_engine
     Card flip_card();
 
