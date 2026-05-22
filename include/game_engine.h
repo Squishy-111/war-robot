@@ -20,6 +20,8 @@ class GameEngine {
 
     bool check_ultimate_winner();
 
+    void award_cards();
+
     std::string get_player_name();
 
     void flip_cards();

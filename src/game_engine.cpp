@@ -30,3 +30,12 @@ bool GameEngine::check_war(){
 
 }
 
+std::string GameEngine::get_player_name(){
+    
+    std::cout << "what is your name: \n";
+    std::string name {};
+    std::cin >> name;
+
+    return name;
+
+}
