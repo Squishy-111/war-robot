@@ -15,6 +15,15 @@ class Deck {
     void shuffle();
     void deal(Player& player1, Player& player2);
 
+    Deck() {
+
+        for(int SuitInt = static_cast<int>(Card::Suit::club); SuitInt <= static_cast<int>(Card::Suit::spade); SuitInt++ ){
+            for(int RankInt = static_cast<int>(Card::Rank::ace); RankInt <= static_cast<int>(Card::Rank::king); RankInt++){
+                cards.push(Card(static_cast<Card::Suit>(SuitInt),static_cast<Card::Rank>(RankInt)));
+            }
+        }
+    }
+    
     private:
     
     std::stack<Card> cards;
