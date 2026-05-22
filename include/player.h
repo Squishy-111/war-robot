@@ -28,6 +28,8 @@ class Player {
     // return card to the game_engine
     Card flip_card();
 
+    Player(std::string name): name(name) {}
+
     private:
 
     std::stack<Card> discard {};
