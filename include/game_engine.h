@@ -1,6 +1,7 @@
 #pragma once
 
 #include "card.h"
+#include "player.h"
 
 #include <stack>
 #include <iostream>
@@ -18,7 +19,7 @@ class GameEngine {
 
     void determine_battle_winner();
 
-    bool check_ultimate_winner();
+    bool check_ultimate_winner(Player& player1, Player& player2);
 
     void award_cards();
 
@@ -32,6 +33,7 @@ class GameEngine {
         Card last_played_card_player1;
         Card last_played_card_player2;
         std::string battle_winner;
+        std::string ultimate_winner;
         std::stack<Card> battle_cards {}; 
 
 
