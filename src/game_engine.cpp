@@ -48,3 +48,23 @@ void GameEngine::determine_battle_winner(){
     }
 
 }
+
+bool GameEngine::check_ultimate_winner(Player& player1, Player& player2){
+
+    if(player1.is_hand_empty() && player1.is_discard_empty()){
+
+        ultimate_winner = "player2";
+        return true;
+
+    } else if(player2.is_hand_empty() && player2.is_discard_empty()) {
+
+        ultimate_winner = "player1";
+        return true;
+
+    } else {
+        return false;
+    }
+
+
+
+}
