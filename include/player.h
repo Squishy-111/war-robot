@@ -22,6 +22,8 @@ class Player {
 
     bool is_hand_empty();
 
+    bool is_discard_empty();
+
     // lets deck class push cards to hand
     std::stack<Card>& get_hand();
 

@@ -68,6 +68,16 @@ bool Player::is_hand_empty(){
 
 }
 
+bool Player::is_discard_empty(){
+
+    if(discard.empty()) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
 Card Player::flip_card(){
 
     //take card from top of hand
