@@ -65,6 +65,17 @@ bool GameEngine::check_ultimate_winner(Player& player1, Player& player2){
         return false;
     }
 
+}
+
+void GameEngine::award_cards(Player& player){
+
+    while(battle_cards.empty() != true) {
+
+        player.get_discard().push(battle_cards.top());
+        battle_cards.pop();
+        
+    }
 
 
 }
+

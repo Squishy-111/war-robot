@@ -21,7 +21,8 @@ class GameEngine {
 
     bool check_ultimate_winner(Player& player1, Player& player2);
 
-    void award_cards();
+    // give cards to battle_winner located in battle_cards stack
+    void award_cards(Player& player);
 
     std::string get_player_name();
 
