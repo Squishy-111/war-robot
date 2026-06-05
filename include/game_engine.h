@@ -16,7 +16,7 @@ class GameEngine {
 
     void war();
 
-    int determine_battle_winner();
+    void determine_battle_winner();
 
     bool check_ultimate_winner();
 
@@ -31,6 +31,7 @@ class GameEngine {
 
         Card last_played_card_player1;
         Card last_played_card_player2;
+        std::string battle_winner;
         std::stack<Card> battle_cards {}; 
 
 

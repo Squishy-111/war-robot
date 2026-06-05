@@ -4,7 +4,6 @@ void GameEngine::run(){
 
 // create deck instance
 // create both the human_player instance and the cpu_player instance
-// input name for human player
 // shuffle and deal deck
 
 // implement main game while loop checking for ultimate winner
@@ -40,12 +39,12 @@ std::string GameEngine::get_player_name(){
 
 }
 
-int GameEngine::determine_battle_winner(){
+void GameEngine::determine_battle_winner(){
 
     if(last_played_card_player1.rank > last_played_card_player2.rank){
-        return 1;
+        battle_winner = "player1";
     } else {
-        return 2;
+        battle_winner = "player2";
     }
 
 }
