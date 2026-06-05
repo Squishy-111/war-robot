@@ -93,3 +93,9 @@ std::stack<Card>& Player::get_hand(){
     return hand;
 
 }
+
+std::stack<Card>& Player::get_discard(){
+
+    return discard;
+
+}

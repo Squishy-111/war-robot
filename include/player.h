@@ -26,6 +26,9 @@ class Player {
 
     // lets deck class push cards to hand
     std::stack<Card>& get_hand();
+    
+    std::stack<Card>& get_discard();
+
 
     // return card to the game_engine
     Card flip_card();
