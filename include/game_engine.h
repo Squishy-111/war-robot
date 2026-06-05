@@ -15,7 +15,7 @@ class GameEngine {
         
     bool check_war();
 
-    void war();
+    void war(Player& player1, Player& player2);
 
     void determine_battle_winner();
 
@@ -26,7 +26,7 @@ class GameEngine {
 
     std::string get_player_name();
 
-    void flip_cards();
+    void flip_cards(Player& player1, Player& player2);
 
 
     private:

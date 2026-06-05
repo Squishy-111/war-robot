@@ -79,13 +79,21 @@ void GameEngine::award_cards(Player& player){
 
 }
 
-void GameEngine::war(){
+void GameEngine::war(Player& player1, Player& player2){
 
     for(int i=0; i<4; ++i){
-        flip_cards();
+        flip_cards(player1, player2);
         battle_cards.push(last_played_card_player1);
         battle_cards.push(last_played_card_player2);
     }
+
+}
+
+void GameEngine::flip_cards(Player& player1, Player& player2){
+
+    last_played_card_player1 = player1.flip_card();
+    last_played_card_player2 = player2.flip_card();
+    
 
 }
 
